@@ -99,3 +99,12 @@ function splitdata{T<:Any}(dt::Array{T,2})
 
     tr,val,te
 end
+
+@doc """ shuffle dataset
+random indexes of row
+""" ->
+function shuffle(data)
+    m,n = size(data)
+    inds = randperm(m)
+    data[inds,:]
+end
