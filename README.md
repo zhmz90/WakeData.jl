@@ -1,6 +1,6 @@
 # WakeData.jl
 
-Linux OSX: [![Build Status](https://travis-ci.org/zhmz90/WakeData.jl.jl.svg?branch=master)](https://travis-ci.org/zhmz90/WakeData.jl.jl)
+Linux OSX: [![Build Status](https://travis-ci.org/zhmz90/WakeData.jl.svg?branch=master)](https://travis-ci.org/zhmz90/WakeData.jl)
 
 This package aims to collect useful functions for analysis big data.
 
@@ -10,12 +10,9 @@ This package aims to collect useful functions for analysis big data.
 	
 ### Functions 
 
-'''Julia
-
-	reformat(data)  # 2 columns
-	reformat3(data) # 3 columns
-
-
-'''
+```Julia
+reformat(data)  # 2 columns
+reformat3(data) # 3 columns
+```
 
 	
