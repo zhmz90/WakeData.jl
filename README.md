@@ -11,6 +11,9 @@ This package aims to collect useful functions for analysis big data.
 ### Functions 
 
 ```Julia
+#index data with its first column
+index(data)
+
 # reformat dataset
 reformat(data)  # 2 columns
 reformat3(data) # 3 columns
