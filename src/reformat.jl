@@ -1,5 +1,15 @@
 export reformat,reformat3
 
+@doc """ index array data with the first column
+""" ->
+function index(dt)
+    dict = Dict{ASCIIString,Array{ASCIIString,1}}()
+    for i = 1:size(dt,1)
+        dict[dt[i,1]] = dt[i,2:end]
+    end
+    dict
+end
+
 function reformat(data::Array{ASCIIString,2})
     data = data[2:end,:]
     id_event = Dict{ASCIIString,Set{ASCIIString}}()
