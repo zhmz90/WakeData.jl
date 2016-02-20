@@ -1,4 +1,4 @@
-module WakeData.jl
+module WakeData
 
 # package code goes here
 

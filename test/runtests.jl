@@ -1,4 +1,4 @@
-using WakeData.jl
+using WakeData
 using Base.Test
 
 # write your own tests here
