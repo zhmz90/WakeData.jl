@@ -76,3 +76,26 @@ function reformat3(data::Array{ASCIIString,2})
     
     result,ret_dict
 end
+
+
+@doc """ the last column as lable column, ratio is 6:2:2
+assume data doest not contain header part
+""" ->
+function splitdata{T<:Any}(dt::Array{T,2})
+    labels = Set(dt[:,end])
+    num_row,num_col = size(dt)
+    tr,val,te = Array{T,2}(0,num_col),Array{T,2}(0,num_col),Array{T,2}(0,num_col)
+
+    for lb in labels
+        inds = dt[:,end] .== lb
+        data = dt[inds,:]
+        len = size(data,1)
+        trval = Int64(round(len*0.6))
+        valte = trval + Int64(round(len*0.2))
+        tr  = vcat(tr, data[1:trval,:])
+        val = vcat(val,data[trval+1:valte,:])
+        te  = vcat(te, data[valte+1:end,:])
+    end
+
+    tr,val,te
+end
