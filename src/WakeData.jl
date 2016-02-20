@@ -4,5 +4,6 @@ module WakeData
 
 include("reformat.jl")
 include("join.jl")
+include("stat.jl")
 
 end # module

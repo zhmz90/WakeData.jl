@@ -28,6 +28,11 @@ splitdata(data)
 #shuffle dataset 
 shuffle(data)
 
+#get min mean median max of a vec
+minmeanmedianmax(vec)
+# get min mean median max for each column of data
+statcols(data)
+
 ```
 
 	
