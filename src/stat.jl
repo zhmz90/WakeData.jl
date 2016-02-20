@@ -10,3 +10,6 @@ function statcols(data)
         println(minmeanmedianmax(tmp))
     end
 end
+
+
+

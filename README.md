@@ -33,6 +33,9 @@ minmeanmedianmax(vec)
 # get min mean median max for each column of data
 statcols(data)
 
+#model XGBoost
+model_xgboost(tr,val,test,1000)
+
 ```
 
 	
