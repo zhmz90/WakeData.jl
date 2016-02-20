@@ -13,6 +13,8 @@ This package aims to collect useful functions for analysis big data.
 ```Julia
 reformat(data)  # 2 columns
 reformat3(data) # 3 columns
+leftjoindata(dt1,dt2) #left join datasets with the first columns as id
+leftjoindata(dt1,dt2,dt3...)
 ```
 
 	
