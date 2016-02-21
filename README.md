@@ -2,7 +2,9 @@
 
 Linux OSX: [![Build Status](https://travis-ci.org/zhmz90/WakeData.jl.svg?branch=master)](https://travis-ci.org/zhmz90/WakeData.jl)
 
-This package aims to collect useful functions for analysis big data.
+For us, data science is more than a skill or profession. It is a calling and a way of life. It rewards grit as much as talent. Failure, curiosity, and small successes lead to larger advances. Data science grants the power of discovery to the individual.
+
+See if you have what it takes to observe the right patterns, ask the right questions and, in turn, make our beautiful and complex world a little easier to understand and a better place to live. 
 
 ### Installation
 
