@@ -22,7 +22,7 @@ function model_xgboost(train, val, test, num_iter::Int64)
     param      = Dict{ASCIIString,Any}("max_depth"=>7,"eta"=>0.01,"nthread"=>50,
                                        "objective"=>"multi:softprob","silent"=>1,
                                        #"alpha"=>0.7,
-                                       "sub_sample"=>0.9)  ,"num_class"=>num_class)
+                                       "sub_sample"=>0.9)#  ,"num_class"=>num_class)
    
     bst = xgboost(dtrain,num_round,watchlist=watch_list,param=param,num_class=num_class,
                   metrics=["mlogloss", "merror"],seed=2015)
