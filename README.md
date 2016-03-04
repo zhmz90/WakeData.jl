@@ -38,6 +38,9 @@ statcols(data)
 #model XGBoost
 model_xgboost(tr,val,test,1000)
 
+# model ensemble
+ensp.ensemble()
+
 ```
 
 	
